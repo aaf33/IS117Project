@@ -1,0 +1,220 @@
+<!-- DEVELOPER: Ahmed A Faisal, IS117-102, Spring 2022 (NJIT) -->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Ahmed's Page (IS117)</title>
+    <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+           rel="stylesheet"
+           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+           crossorigin="anonymous">
+
+     <link href="css/main.css" rel="stylesheet">
+     <link href="css/bootstrap.css" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+
+ </head>
+ <body>
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+         <div class="row">
+             <span class="text-muted">&copy; Ahmed Faisal, 2022 |  Terms Of Use  |  Privacy Statement</span>
+         </div>
+     </div>
+ </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+
+
+
+
+ <div class="container-fluid">
+     <div class="row">
+         <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+             <!-- Brand -->
+             <a class="navbar-brand" href="index.html">C:\></a>
+             <!-- Responsive Button for the smaller menu -->
+             <button class="navbar-toggler" type="button"
+                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav">
+                     <!-- Links -->
+                     <li class="nav-item">
+                         <a class="nav-link" href=contact.html>Contact</a>
+                     </li>
+                     <!-- Dropdown -->
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                            data-toggle="dropdown"  role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                             Content
+                         </a>
+                         <div class="dropdown-menu">
+                             <a class="dropdown-item" href="blog.html">Blog</a>
+                             <a class="dropdown-item" href="tutorial.html">Tutorials</a>
+
+                         </div>
+                     </li>
+                 </ul>
+             </div>
+         </nav>
+     </div>
+     <div class="row">
+         <div class="mt-4 p-5 bg-success rounded">
+             <div class="col px-lg-5">
+                 <div class="p-3 border text-center bg-light">
+                     <h1 style="font-family:'Major Mono Display'"><b>The Programmers Corner</b></h1>
+                     <h5><i>For the programmer, by the programmer</i></h5>
+                 </div>
+             </div>
+         </div>
+         <div class="mt-4 p-5 bg-danger">
+             <div class="col px-lg-5">
+                 <div class="p-3 border bg-light">
+                     <h5><i>Written by Ahmed Faisal</i></h5>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-4 center"></div>
+            <div class="col-md-4 center">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+                 <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                 </div>
+
+
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
+                         <img src="images/computerimage.jpg" alt="Motherboard" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="images/computernzxt.jpg" alt="Motherboard" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="images/dos.png" alt="Motherboard" class="d-block w-100">
+                     </div>
+                 </div>
+
+
+                 <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                     <span class="carousel-control-next-icon"></span>
+                 </button>
+             </div>
+         </div>
+         <div class="col-md-4 center"></div>
+         <div class="mt-4 p-5 bg-danger"></div>
+     </div>
+     <div class="mt-4 p-5 bg-secondary"><h1>Topics of the Moment</h1></div>
+     <hr class="solid">
+     <div class="row mx-md-n5">
+
+         <div class="col px-md-5"><div class="p-3 border bg-light">
+             <h4><i>Software of the Week: EMACS</i></h4>
+             <hr class="solid">
+             <img src="images/emacs.png" alt="Emacs" width="320" height="320">
+             <hr class="solid">
+             <article>
+                 Emacs is a family of text-editors based off of the GNU project, well known
+                 within the enthusiast and business sectors of the computer world. As everyone starts
+                 from the ubiquitous NANO and probably even had their start with EDIT.COM (Remember
+                 how you could use that within 32-bit windows?), it's important to remember
+                 the one text-editor which could hypothetically rule them all: Emacs. Developed by
+                 David A Moon and Guy L Steele in the 1970s, it was programmed in C and LISP and has been
+                 widely supported across a large variety of Operating Systems. Ultimately, the desktop is your
+                 oyster with this versatile and powerful software.
+                 <hr class="solid">
+                 <a href="https://www.gnu.org/software/emacs/download.html">Download Here</a>
+                 <hr class="solid">
+             </article>
+         </div></div>
+         <div class="col px-md-5"><div class="p-3 border bg-light">
+             <h4><i>Parts List!</i></h4>
+             <hr class="solid">
+             <article>
+                 With the GPU Shortage coming across enthusiast builders within the start of the new 20s, it's
+                 becoming more of a rarity to see people compiling their own parts list for a computer. As of now, there
+                 is no particular parts list in order, due to the shortage. Sorry!
+
+                 <br><br><br>
+
+                 But, if you'd like, I can probably recommend a mini-computer setup, if you're interested in Raspberry PI's
+                 (or DE-10 nanos, I guess). Maybe even a case, if you click on the link below...
+                 <hr class="solid">
+                 <img src="images/a1500checkmatecase.png" alt="The Greatest Case" width="400" height="280">
+                 <p><small><small><i><a href="https://checkmate1500plus.com/Introduction1500.aspx">Source: Stephen Jones</a></i></small></small></p>
+                 <hr class="solid">
+             </article>
+         </div></div>
+         <div class="col px-md-5"><div class="p-3 border bg-light">
+             <h4><i>About the Author:</i></h4>
+             <hr class="solid">
+             <img src="images/ahmed.jpg" alt="The Man" width="320" height="320">
+             <hr class="solid">
+             <article>
+                 Ahmed A. Faisal (me) is the chief editor of this website, making it for his IS117 Project as a general-purpose
+                 programming blog which details facts, fiction, and statistics on the computer world. Needlessly toiling on
+                 this website has lead to an innate appreciation for web-development, something which has been a new experience for me. But for
+                 a basic introduction, let's keep it simple: I am a current student at NJIT, working towards a degree in Computer Science with a
+                 primary focus on Software Engineering (this means desktop-development). My hobbies include Electronics, Programming, and Collecting
+                 Records. I currently reside in New Jersey (read: stuck forever in eternal hell) and will probably stay there for the rest of my life.
+                 <hr class="solid">
+                 My Computer Specs: <br>
+                 Video Card: GTX 1660 Ti (6GB) <br>
+                 RAM: 32GB <br>
+                 Processor: AMD Ryzen 7 3700X at 3.6 Ghz <br>
+                 Motherboard: B550 Pro Aorus RC <br>
+                 Case: Some Cooler Master case, too lazy to look at my newegg order list atm <br>
+             </article>
+         </div></div>
+
+     </div>
+     <div class="mt-4 p-5 bg-secondary"><h1>Other Areas</h1></div>
+     <hr class="solid">
+     <div class="row p-5 mx-md-n5">
+         <div class="card px-md-5" style="width: 18rem;">
+             <div class="card-body">
+                 <h5 class="card-title">Tutorials</h5>
+                 <h6 class="card-subtitle mb-2 text-muted">(Includes free downloads and links)</h6>
+                 <p class="card-text">Tutorials on many computer-related topics, from programming to electronics.</p>
+                 <a href="tutorial.html" class="card-link">Read More...</a>
+             </div>
+         </div>
+         <div class="col-sm-1"></div>
+         <div class="card px-md-5" style="width: 18rem;">
+             <div class="card-body">
+                 <h5 class="card-title">Blog</h5>
+                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                 <p class="card-text">A Blog containing the ramblings of a man</p>
+                 <a href="blog.html" class="card-link">Read More...</a>
+             </div>
+         </div>
+         <div class="col-sm-1"></div>
+         <div class="card px-md-5" style="width: 18rem;">
+             <div class="card-body">
+                 <h5 class="card-title">Contact</h5>
+                 <p class="card-text">Contact Information / Newsletter</p>
+                 <a href="contact.html" class="card-link">Click Here...</a>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ </body>
+</html>

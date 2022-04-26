@@ -1,0 +1,177 @@
+<!-- DEVELOPER: Ahmed A Faisal, IS117-102, Spring 2022 (NJIT) -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Ahmed's Page (IS117)</title>
+    <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+           rel="stylesheet"
+           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+           crossorigin="anonymous">
+
+     <link href="css/main.css" rel="stylesheet">
+
+ </head>
+ <body>
+ <div class="container-fluid">
+     <div class="row">
+         <<nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+         <!-- Brand -->
+         <a class="navbar-brand" href="index.html">C:\></a>
+         <!-- Responsive Button for the smaller menu -->
+         <button class="navbar-toggler" type="button"
+                 data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+             <ul class="navbar-nav">
+                 <!-- Links -->
+                 <li class="nav-item">
+                     <a class="nav-link" href=contact.html>Contact</a>
+                 </li>
+                 <!-- Dropdown -->
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                        data-toggle="dropdown"  role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                         Content
+                     </a>
+                     <div class="dropdown-menu">
+                         <a class="dropdown-item" href="blog.html">Blog</a>
+                         <a class="dropdown-item" href="tutorial.html">Tutorials</a>
+
+                     </div>
+                 </li>
+             </ul>
+         </div>
+     </nav>
+     </div>
+     <div class="row">
+         <div class="mt-4 p-5 bg-success text-white rounded">
+             <h1>Blog</h1>
+             <p>Nothing to see here. Carry on.</p></div>
+     </div>
+     <br>  <br><br>
+     <div class="row">
+     <div class="row px-md-5"><div class="p-3 border bg-light">
+         <h4><i>Raytracing With Doom</i></h4>
+         <hr class="solid">
+         <article>
+             Everyone's heard about the new Graphics Fad going around: Some engineers have figured out how to double
+             the transistors within a single board, allowing for new innovations like waving hair, useless particle effects,
+             or better yet, raytracing. But wait a minute, Raytracing? Useless? Well, not particularly...
+
+             <br><br>
+
+             Raytracing has been a topic within computer graphics for a long time, oftentimes considered to be an unattainable feat for Personal Computers
+             due to the requirements of performance: in the mid 1980s for instance, consumer systems like the Commodore Amiga could only render ray-tracing
+             frames very, very excruciatingly slowly. And even then, it would take a lot of time to display the pre-rendered result, let alone
+             actively render a ray-traced scene in real time. Thus, the standard for computer graphics in the consumer industry was known as rasterization - the
+             process of taking an image based off of data segments (shapes, vectors, and lines), and then converting it into a pixel-by pixel image. Raytracing on
+             the other hand, renders images through the natural propagation of light, something which requires intense calculations per frame. This has made
+             the realm of Raytraced graphics a phenomenon only seen in the CGI industry, where developers almost always had access to the latest workstations
+             of the era.
+
+             <br><br>
+
+             However, new cards developed by Nvidia can make the concept of raytraced real-time graphics a reality. Starting with the 1660 series onwards which
+             contains the "Turing Micro-architecture", these cards can perform ray-tracing calculations for the games which support it. For the topic of this article,
+             we will look at the classic FPS "Doom", which has a new source-port designed to take advantage of the new architecture found within these GPUs.
+
+             <br><br>
+
+             Doom was always known for it's sector-based lighting which while dynamic, was entirely based off of node-defined sectors, and had little consideration
+             for dynamic lights. The Raytracing engine allows the sectors to still utilize lighting, but also contains calculations which perform "light bounces"
+             across the level, allowing for dynamic reflections and lights. Additionally, material pipelines are added for each and every texture, meaning that
+             different surfaces have different emissive properties (Something which was never programmed within the original doom engine).
+
+             <br><br>
+             The effect is stunning, but at the same time, jarring at high resolutions. There's a particular zen with playing doom at it's intended 300x220
+             resolution, where every sprite and object feels in-line with the experience. As you increase the resolution, the immersion seems to decrease. The
+             raytracing engine, while very impressive and wondrous in its own right, has its flaws where it can't recreate the original atmosphere of the game in
+             some places. With that being said, when you set the renderer to a lower resolution, then it indeed feels more immersive.
+
+
+             <br><br>
+             The source port can be picked up from github and is only tailored to play with the first 4 episodes of the Ultimate Doom, which is easy to get on
+             Steam or GOG. It can also work with other WADs which use the same IWAD, which means that Doom 2 will probably have the proper lighting, but won't
+             work well.
+         </article>
+
+
+     </div></div>
+         <div class="row px-md-5"><div class="p-3 border bg-light">
+             <h4><i>Retro Computers: A Treasure Trove of Lost Knowledge, and their Legacy</i></h4>
+             <hr class="solid">
+             <article>
+                 Many people growing up in the 80s or 90s remember the age of Micro-Computers: When they were around the same size, sometimes contained
+                 within a single unit, and often had very, very steep learning curves to them. For instance, when the ZX-Spectrum released in the 1980s (I am
+                 not speaking from experience), it was often contained within a kit which you had to build - and then when you got the thing working (which never
+                 works out properly if you solder in your spare time), then you had to learn how to write programs. In an age when computers were reaching the
+                 mainstream, the public had to learn how to program them due to the knowledge only being accessible to companies and universities. For many young
+                 people like myself, such a truth is hard to imagine when learning about programming or electronics these days is extremely simple - and even
+                 when the spirit of hobbyist computing is preserved with the Arduino and the Raspberry Pi, many older folks grew up with long, long nights of
+                 reading thick manuals describing BASIC or C Programs, only to type them out on the command line to have it fail.
+
+                 <br><br>
+
+                 Of course, anyone who has programmed in vim or nano (My Junior semester taking a Linux Programming Course) will still experience the feeling of
+                 typing an entire program from scratch, only to have it fail when you type the dreaded "gcc -o Hello.c Hello.exe" on their command line. But many
+                 things are being lost to newer generations as computers become more complex; Case in Point: Assembly. Once a fundamental language which allowed
+                 programmers to write complex and efficient programs, is now pretty much useless (to learn) as any modern compiler generates optimized machine-code on the fly.
+                 Now of course, you will need to know assembly to understand how a computer receives and computes data, the concept of a PC counter, the Stack Pointer,
+                 registers and what they correspond to, among many other things; but besides this you will never learn how to fully program in assembly due to it's
+                 sheer magnitude. Besides, who actually wants to program a 3d game in assembly these days?
+
+                 <br><br>
+
+                 Despite all this, it's important to recognize the feats of these ancient computers and what they cemented for newer generations: a long-standing
+                 tradition of programming, finding out how to do things, and persistent innovation.
+             </article>
+         </div></div>
+     </div></div>
+
+ </div>
+ <div class="mt-4 p-5 bg-secondary"><h1>Download Links (for my personal projects)</h1></div>
+ <hr class="solid">
+ <div class="row p-5 mx-md-n5">
+     <div class="card px-md-5" style="width: 32rem;">
+         <div class="card-body">
+             <h5 class="card-title">Game Link</h5>
+             <h6 class="card-subtitle mb-2 text-muted">(C++ Game with SDL 2.0)</h6>
+             <p class="card-text">Here is a link to a game I created with C++. It has a very nice
+             retro asthetic, and hopefully you will have fun playing it as I did making it</p>
+             <a href="#" class="card-link">Read More...</a>
+             <a href="#" class="card-link">Changelog</a>
+         </div>
+     </div>
+     <div class="col-sm-1"></div>
+     <div class="card px-md-5" style="width: 32rem;">
+         <div class="card-body">
+             <h5 class="card-title">WAD files</h5>
+             <p class="card-text">Over the years, I have made a collection of Doom WADs which range from
+             amateaurish to polished. Like anyone, I put them up for your downloading pleasure, please contact
+             me if there are any bugs.</p>
+             <a href="#" class="card-link">idgames archive link</a>
+         </div>
+     </div>
+ </div>
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+         <div class="row">
+             <span class="text-muted">&copy; Ahmed Faisal, 2022 |  Terms Of Use  |  Privacy Statement</span>
+         </div>
+     </div>
+ </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+
+ </body>
+</html>
